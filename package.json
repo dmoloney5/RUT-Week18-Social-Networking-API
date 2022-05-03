@@ -1,0 +1,27 @@
+{
+  "name": "rut-week18-social-networking-api",
+  "description": "RUT-Week19-Social-Networking-API",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmoloney5/RUT-Week18-Social-Networking-API.git"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemom server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmoloney5/RUT-Week18-Social-Networking-API/issues"
+  },
+  "homepage": "https://github.com/dmoloney5/RUT-Week18-Social-Networking-API#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16"
+  }
+}
