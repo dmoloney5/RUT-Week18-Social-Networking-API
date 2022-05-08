@@ -8,18 +8,22 @@ const usersController = {
       .then((dbUsers) => res.json(dbUsers))
       .catch((err) => res.status(400).json(err));
   },
-  //GetAllUsers
-  getAllUsers(req, res) {
-    Users.find({})
-      .populate({ path: "thoughts", select: "__v" })
-      .populate({ path: "friends", select: "__v" })
-      .select("__v")
-      .then((dbUsers) => res.json(dbUsers))
-      .catch((err) => {
-        console.log(err);
-        res.status(400).json(err);
-      });
-  },
+  
+ // Get All Users
+    getAllUsers(req, res) {
+        Users.find({})
+        // populate users thoughts
+        .populate({path: 'thoughts', select: '-__v'})
+        // populate user friends
+        .populate({path: 'friends', select: '-__v'})
+        .select('-__v')
+        // .sort({_id: -1})
+        .then(dbUsersData => res.json(dbUsersData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+    },
 
   //get single user by id
   getUsersById({ params }, res) {
