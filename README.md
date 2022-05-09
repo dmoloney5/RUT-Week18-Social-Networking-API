@@ -18,16 +18,16 @@ RUT-Week19-Social-Networking-API
   Dennis Moloney
 
   ## Website
-  https://rut-week11-notetaker.herokuapp.com/
+  N/A this is an API you must use Insomnia
 
   ## Repository
-  https://github.com/dmoloney5/RUT-Week11-NoteTaker.git
+  https://github.com/dmoloney5/RUT-Week18-Social-Networking-API.git
 
   ## License
   ### The following apps were used: 
   Nodejs, ExpressJS, MongoDB and mongoose
   
   ## Video
-  ![YouTube](https://youtu.be/2CqGSc8dH1Q)
+  ![YouTube](https://www.youtube.com/watch?v=2CqGSc8dH1Q)
 
   
